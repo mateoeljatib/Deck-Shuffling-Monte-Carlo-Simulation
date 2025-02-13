@@ -9,26 +9,26 @@ How the Simulation Works:
 
 - Gaussian-Based Cutting: A portion of the deck is split using a Gaussian probability distribution centered around position 20, ensuring the cut point falls between the 15th and 25th cards.
 
--Interleaving Shuffle:
+Interleaving Shuffle:
 
-    The second half of the deck is divided into 2 to 4 parts of roughly equal size.
+- The second half of the deck is divided into 2 to 4 parts of roughly equal size.
 
-    These parts are interleaved with the first half.
+- These parts are interleaved with the first half.
 
--Repeated Shuffling: The process is repeated randomly between 4 and 8 times to simulate a real-world shuffle.
+Repeated Shuffling: The process is repeated randomly between 4 and 8 times to simulate a real-world shuffle.
 
--Monte Carlo Analysis: The shuffle is executed 500 to 1000 times, tracking where Card 1 ends up after each run.
+Monte Carlo Analysis: The shuffle is executed 500 to 1000 times, tracking where Card 1 ends up after each run.
 
--Statistical Testing:
+Statistical Testing:
 
-    A histogram is generated to visualize the final positions of Card 1.
+- A histogram is generated to visualize the final positions of Card 1.
 
-    A chi-square test is performed to determine if the final distribution deviates significantly from a uniform distribution.
+- A chi-square test is performed to determine if the final distribution deviates significantly from a uniform distribution.
 
--Results & Observations:
+Results & Observations:
 
-    If the shuffle is perfectly uniform, each position should have approximately equal probability.
+- If the shuffle is perfectly uniform, each position should have approximately equal probability.
 
-    If the shuffle is biased, certain positions will be overrepresented.
+- If the shuffle is biased, certain positions will be overrepresented.
 
-    The chi-square test helps assess whether the observed distribution is significantly different from a uniform one.
+- The chi-square test helps assess whether the observed distribution is significantly different from a uniform one.
